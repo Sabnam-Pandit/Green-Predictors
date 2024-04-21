@@ -13,7 +13,7 @@ def get_args():
         help='Target column name in energy data', 
         default='generation fossil brown coal/lignite'
     )
-    parser.add_argument('--output', type=str, help='Output file path')
+    parser.add_argument('--output', type=str, default='data/merged.csv', help='Output file path')
     return parser.parse_args()
 
 def weather_preprocess(weather_data):
@@ -21,6 +21,10 @@ def weather_preprocess(weather_data):
     return weather_data
 
 def energy_preprocess(energy_data):
+    # replace nan by mean for every column
+    for column in energy_data.columns[1:]:
+        energy_data[column] = energy_data[column].fillna(energy_data[column].mean())
+        
     return energy_data
 
 def merge_data(weather_data, energy_data, args):
