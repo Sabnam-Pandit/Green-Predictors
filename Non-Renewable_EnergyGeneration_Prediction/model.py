@@ -6,6 +6,7 @@ from sklearn.ensemble import RandomForestRegressor
 from xgboost.sklearn import XGBRegressor
 from sklearn.svm import SVR
 from sklearn.metrics import r2_score
+from sklearn.model_selection import GridSearchCV
 
 data = pd.read_csv('data/merged.csv')
 
@@ -16,12 +17,17 @@ X_train, X_test, y_train, y_test = train_test_split(
     random_state=42
 )
 
-model = XGBRegressor()
+model = RandomForestRegressor()
 
-model.fit(X_train, y_train)
+parameters = {
+    'n_estimators': [10, 50, 100],
+    'max_depth': [None, 50, 100],
+    'min_samples_leaf': [1, 2, 4]
+}
 
-y_pred = model.predict(X_test)
+clf = GridSearchCV(model, parameters, scoring='r2', cv=5)
+clf.fit(X_train, y_train)
 
-r2 = r2_score(y_test, y_pred)
+y_pred = clf.predict(X_test)
 
-print(f'R2 Score: {r2}')
+print(f'R2 score: {r2_score(y_test, y_pred)}')
