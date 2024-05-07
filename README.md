@@ -1,10 +1,10 @@
 # Green-Predictors
 # BDA 602 Final Project : Energy Consumption and Generation Prediction based on Weather Conditions 
 Team Members:
-Anatasia Kurakova
-Alexandra Nguyen
-Sabnam Pandit
-Yu-Chieh (Jason) Tu
+Anatasia Kurakova,
+Alexandra Nguyen,
+Sabnam Pandit,
+Yu-Chieh (Jason) Tu,
 Wanjing (Anna) Yan
 
 Project Overview:
