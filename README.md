@@ -10,15 +10,20 @@ Wanjing (Anna) Yan
 Project Overview:
 This project aims to predict energy consumption and generation based on weather conditions in Spain, using machine learning algorithms and the Kaggle dataset "Hourly energy demand generation and weather". Our goal is to promote renewable energy generation and reduce carbon emissions.
 
-Key Features:
-Predicts energy consumption and generation using weather and temporal data
-Compares results with non-renewable energy generation
-Achieves high model performance using a combination of weather and temporal factors
-Explores the limitations of using historical data alone for prediction
+Key Features
+Predicts energy consumption and generation using weather and temporal data.
+
+Compares results with non-renewable energy generation.
+
+Achieves high model performance using a combination of weather and temporal factors.
+
+Explores the limitations of using historical data alone for prediction.
 
 Repository Contents:
 Data preprocessing and visualization 
+
 Machine learning model implementations 
+
 Results and analysis (e.g. plots, tables)
 
 Acknowledgments:
