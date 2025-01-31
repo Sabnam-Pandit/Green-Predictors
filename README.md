@@ -76,9 +76,3 @@ The dataset used in this project is the **Hourly Energy Demand Generation and We
 ## Conclusion
 This project demonstrates that combining weather conditions and historical data can effectively predict energy consumption, generation, and prices. However, predicting renewable energy generation based solely on historical data is challenging due to the influence of external factors like seasonality and weather conditions.
 
-## Repository Structure
-- **Data**: Contains the dataset used for the project.
-- **Notebooks**: Includes Jupyter notebooks for data preprocessing, model training, and evaluation.
-- **Results**: Contains visualizations and performance metrics for each model.
-- **Reports**: Includes the final project report and presentation.
-
