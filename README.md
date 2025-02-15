@@ -1,6 +1,6 @@
 # Green-Predictors
 # BDA 602 Final Project : Energy Consumption and Generation Prediction based on Weather Conditions 
-# Energy Consumption and Generation Prediction Based on Weather Conditions
+
 
 ## Project Overview
 
